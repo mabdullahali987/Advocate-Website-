@@ -1,0 +1,428 @@
+/* appling google font over the website  */
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+}
+/* styling menu icon */
+.nav-menu {
+    background-color: #2E2E2E !important;
+    border: none;
+    font-size: 1.5rem;
+    color: #fca61f;
+}
+.bg-cream {
+    background-color: #f3b33b !important;
+}
+
+/* styling navbar links  */
+.navbar-nav a{
+    color: black;
+    position: relative;
+}
+.navbar-nav a:hover{
+    color: #fca61f;
+}
+.navbar-nav a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    top: 35px;
+    position: absolute;
+    background: #fca61f;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+.navbar-nav a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+  /* styling contact btn  */
+.c-btn{
+    border: none;
+    background: #fca61f;
+    color: #fff;
+    font-size: 1.2rem;
+}
+.c-btn:hover{
+    background: #007BFF;
+    color: #fff;
+    transform: translateY(-7px);
+    transition-duration: 1s;
+}
+/* styling home section starts */
+.home{
+    background-color: #f3b33b;
+    color: #2E2E2E;
+    padding: 30px 0px 10px 0px;
+}
+.home h2{
+    font-size: 3rem;
+    line-height: 4rem;
+}
+.c-orange{
+    color: #000000;
+    font-weight: 700;
+    font-size: 4rem;
+}
+.home p{
+    width: fit-content;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+.h-btn:hover{
+    background: #6f34fe;
+    color: #fff;
+    transform: translateY(-20px);
+    transition-duration: 1s;
+}
+.link{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #fca61f;
+    position: relative;
+}
+.link::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    top: 20px;
+    background-color: #6f34fe;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+.link:hover{
+    color: #6f34fe;
+}
+.link:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+/* adding animation to home section image  */
+.home img{
+    animation: floatimg 4s ease-in-out infinite;
+}
+
+@keyframes floatimg {
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(-24px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+
+/* testimonial section starts */
+.testimonial img:hover{
+    transform: scale(1.2,1.2);
+    transition-duration: 1s;
+}
+.testimonial h4{
+    color: #3f396d;
+}
+.testimonial i{
+    font-size: 2.9rem;
+    color: #fca61f;
+    
+}
+.testimonial .nextprev-btn{
+    border: none;
+    background-color: #fff;
+}
+.prev:hover,.prev-btn:hover{
+    color:#6f34fe;
+    transform: translateX(-10px);
+    transition-duration: 1s;
+}
+.next:hover,.next-btn:hover{
+    color:#6f34fe;
+    transform: translateX(10px);
+    transition-duration: 1s;
+}
+/* Default button style */
+/* Default button style */
+/* Apply styles with higher specificity to ensure they take precedence */
+a.btn.btn-sec {
+    background-color: orange; /* Default color */
+    border-color: orange;
+    color: white; /* Ensure text color stays white */
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Hover effect for btn-sec */
+a.btn.btn-sec:hover {
+    background-color: darkorange; /* Darker orange on hover */
+    border-color: darkorange;     /* Darker border color */
+    color: white;                 /* Ensure text stays white */
+}
+
+/* blog section starts */
+.blog{
+    background-color: #f2f2ff;
+}
+.blog .blogpost .card{
+    border: none;
+    border-radius: 5%;
+}
+.nav-bg{
+    background-color: #fff;
+}
+
+.blog .blogpost small{
+    color: #6f34fe;
+    font-size: 1.1rem;
+}
+.blog .blogpost h4,.blogpost a{
+    color: #3f396d;
+    font-weight: 700;
+    margin-top: 1rem;
+    text-decoration: none;
+}
+.blogpost a:hover{
+    color: #fca61f;
+}
+.blog .blogpost .read-more-btn{
+    text-decoration: none;
+    color: #fca61f;
+    font-size: 1.1rem;
+}
+.blog .blogpost .read-more-btn:hover{
+    color: #6f34fe;
+}
+/* styling modal group  */
+.btn-c{
+    margin-left: 94%;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 2rem;
+    margin-top: -3%;
+}
+.btn-c i{
+    color: #fca61f;
+}
+.modal-body .content span{
+    font-size: 1rem;
+}
+.modal-body .content small{
+    font-size: 1rem;
+    color: #6f34fe;
+}
+/* contact section starts */
+.contact{
+    background-color: #f3f3f3;
+}
+.contact-details i{
+    font-size: 1.5rem;
+    color: #fca61f;
+}
+.contact-details p{
+    font-size: 1.2rem;
+    margin-left: 1rem;
+}
+.contact-form .form-control:focus{
+    box-shadow: none;
+    border: 1px solid #fca61f;
+}
+.contact-form .form-control{
+    padding: 10px 10px;
+    width: 80%;
+}
+
+/* footer section starts */
+footer{
+    background-color:#f3b33b;
+}
+
+footer .link-group a{
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+}
+footer .link-group a:hover{
+    color: #007BFF;
+}
+.social-links button{
+    border: none;
+    margin-right: 1rem;
+    font-size: 1.2rem;
+    background-color: #fff;
+    padding: 14px 15px 10px 15px;
+}
+.social-links .dribble{
+    color: #f33a7e;
+}
+.social-links button:hover{
+    color: #fff;
+    transform: translateY(-20px);
+    transition-duration: 1s;
+}
+.social-links .dribble:hover{
+    background-color: #f33a7e;
+}
+.social-links .whatsapp{
+    color: #25D366;
+}
+.social-links .whatsapp:hover{
+    background-color: #25D366;
+}
+.social-links .behance{
+    color: #255afc;
+}
+.social-links .behance:hover{
+    background-color: #255afc;
+}
+
+/* styling back to top button */
+#btn-back-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    display: none;
+    font-size: 1.4rem;
+    background-color: #fca61f;
+    color: #fff;
+    animation: pulse 3s infinite;
+}
+.whatsapp_float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+  }
+ /* Hover effect for the custom <a> button */
+ .btn-orange {
+    background-color: orange;
+    color: white;
+    border: none;
+  }
+  
+  .btn-orange:hover {
+    background-color: darkorange;
+    color: white;
+  }
+  
+  /* Responsive styling for small devices (mobile screens) */
+@media (max-width: 768px) {
+    /* Adjust body font-size for readability */
+    body {
+        font-size: 14px;
+    }
+
+    /* Navbar adjustments */
+    .navbar-nav a {
+        font-size: 1rem;
+    }
+    .navbar-nav a:hover:after {
+        top: 25px; /* Adjust the underline position */
+    }
+
+    /* Buttons */
+    .c-btn {
+        font-size: 1rem; /* Slightly smaller button text */
+        padding: 8px 16px; /* Adjust padding for smaller screens */
+    }
+    .h-btn {
+        transform: none; /* Avoid hover animations on smaller screens */
+        transition-duration: 0.5s; /* Speed up transitions */
+    }
+
+    /* Home section */
+    .home {
+        padding: 20px 0; /* Reduce padding for compact layout */
+    }
+    .home h2 {
+        font-size: 2.5rem; /* Scale down heading size */
+        line-height: 3rem;
+    }
+    .home p {
+        font-size: 1rem; /* Reduce paragraph font size */
+    }
+    .c-orange {
+        font-size: 3rem; /* Adjust orange text size */
+    }
+
+    /* Footer */
+    footer {
+        padding: 20px 10px;
+    }
+    footer .link-group a {
+        font-size: 1rem;
+    }
+    .social-links button {
+        font-size: 1rem;
+        padding: 10px 12px; /* Adjust button size */
+    }
+
+    /* WhatsApp Float Button */
+    .whatsapp_float {
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+        bottom: 20px;
+        right: 20px;
+    }
+
+    /* Back-to-top button */
+    #btn-back-to-top {
+        bottom: 20px;
+        right: 20px;
+        font-size: 1.2rem;
+    }
+
+    /* Blog section */
+    .blog .blogpost h4, .blogpost a {
+        font-size: 1.1rem;
+    }
+    .blog .blogpost small {
+        font-size: 1rem;
+    }
+}
+
+/* Very small devices (max-width: 480px) */
+@media (max-width: 480px) {
+    /* Further scaling down font sizes and paddings */
+    .navbar-nav a {
+        font-size: 0.9rem;
+    }
+    .c-btn {
+        font-size: 0.9rem;
+        padding: 6px 12px;
+    }
+    .home h2 {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+    .home p {
+        font-size: 0.9rem;
+    }
+    .social-links button {
+        font-size: 0.9rem;
+        padding: 8px 10px;
+    }
+}
+.btn-secondary {
+    background-color: orange;
+    color: white;
+}
